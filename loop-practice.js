@@ -66,4 +66,27 @@ const factorial = n => {
 const answer3 = factorial(3);
 console.log(answer3);
 
-//
+//LCM
+const lcm = (arg1, arg2) => {
+  let multiple = 0;
+  let leastMult = 0;
+  let other = 0;
+  if (arg1 > arg2) {
+    multiple = arg1;
+    other = arg2;
+  } else {
+    multiple = arg2;
+    other = arg1;
+  }
+  for (let i = 1; i < multiple; i++) {
+    if ((multiple * i) % other === 0) {
+      leastMult = multiple * i;
+    }
+    if (leastMult > 0) {
+      break;
+    }
+  }
+  return leastMult;
+};
+const answer4 = lcm(4, 16);
+console.log(answer4);
