@@ -40,3 +40,14 @@ const sumToN = n => {
 
 const answer = sumToN(4);
 console.log(answer);
+
+//COUNTDOWN
+const countDown = n => {
+  let countArray = [];
+  for (let i = n; i >= 1; i--) {
+    countArray.push(i);
+  }
+  return countArray;
+};
+const answer2 = countDown(4);
+console.log(answer2);
