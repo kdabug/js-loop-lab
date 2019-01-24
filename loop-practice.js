@@ -43,6 +43,7 @@ console.log(answer);
 
 //COUNTDOWN
 const countDown = n => {
+  //return array counting down from N to 1
   let countArray = [];
   for (let i = n; i >= 1; i--) {
     countArray.push(i);
@@ -51,3 +52,18 @@ const countDown = n => {
 };
 const answer2 = countDown(4);
 console.log(answer2);
+
+//FACTORIAL
+const factorial = n => {
+  //factorial returns the factorial for n
+  let answer = 1;
+  for (let i = n; i >= 1; i--) {
+    answer = answer * i;
+  }
+  return answer;
+};
+
+const answer3 = factorial(3);
+console.log(answer3);
+
+//
